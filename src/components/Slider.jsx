@@ -72,7 +72,7 @@ const Slider = () => {
 
     return (
         <div className="slider" style={{
-            backgroundImage: `url(/src/assets/home_poster${activeSlideIndex}.png)`,
+            backgroundImage: `url(./src/assets/home_poster${activeSlideIndex}.png)`,
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             backgroundOrigin: 'border-box',
