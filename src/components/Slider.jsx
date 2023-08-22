@@ -72,12 +72,13 @@ const Slider = () => {
 
     return (
         <div className="slider" style={{
-            backgroundImage: `url(/src/assets/home_poster${activeSlideIndex}.png)`,
+            backgroundImage: `url(/assets/home_poster${activeSlideIndex}.png)`,
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             backgroundOrigin: 'border-box',
             backgroundPosition: 'center',
         }}>
+
             <h2>Games and Documents</h2>
             <div className="slides-container">
 
