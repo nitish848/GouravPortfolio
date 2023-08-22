@@ -115,4 +115,12 @@ form h2, .contactInfo h2{
     .social{
       justify-content: center !important;
     }
+    .email:after {
+        content: "";
+        width: 100%;
+        display: flex;
+        background-color: #fff;
+        height: 3px;
+        margin: 3% 0%;
+    }
     }
