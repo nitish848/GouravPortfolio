@@ -1,0 +1,118 @@
+.contact{
+    background: url(/src/assets/home_poster2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact p{
+    text-align: center;
+}
+.contactDiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+.contactDiv form{
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    flex-direction: column;
+    width: 50%;
+}
+.contactInfo{
+    width: 50%;
+    align-self: flex-start;
+}
+.email::after{
+    content: "";
+    width: 42%;
+    display: flex;
+    background-color: #fff;
+    height: 3px;
+    margin: 3% 0%;
+}
+form input, form textarea{
+    width: 80%;
+    margin: 2% 0%;
+    border: 3px solid white;
+    background-color:transparent;
+    border-radius: 32px 0px 32px 0px;
+    padding: 2% 3%;
+    font-size: 20px;
+    color: #fff;
+    outline: none;
+}
+form input::placeholder, form textarea::placeholder{
+    color: #fff;
+}
+form button{
+    color: #0D0A3F;
+    background-color: #fff;
+    border-radius: 0px 50px 0px 50px;
+    padding: 1% 10%;
+    font-size: 20px;
+    border: none;
+}
+.contact h2{
+    font-size: 24px;
+}
+form h2, .contactInfo h2{
+    font-size: 24px;
+}
+.contactInfo p{
+    font-size: 24px;
+}
+.contact a{
+    color: #fff;
+    text-decoration: none;
+}
+.contactInfo p{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.social{
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+}
+.social svg{
+    margin-right: 2%;
+}
+
+
+@media (max-width:960px){
+    .contactDiv{
+      flex-direction: column;
+      width: 95%;
+    }
+    .contactDiv form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+    }
+    .contactInfo {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactInfo p {
+      justify-content: center;
+      font-size: 19px;
+    }
+    .social{
+      justify-content: center !important;
+    }
+    }

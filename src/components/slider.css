@@ -1,0 +1,252 @@
+/* Slider.css */
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: center;
+    position: relative;
+  }
+  
+  .slides-container {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    transition: transform 0.3s ease-in-out;
+
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .swipe-fade-up,.swipe-fade-right{
+    opacity: 1;
+  }
+  .inner-slider {
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .inner-slider-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #000000;
+    min-height: 300px;
+    border-radius: 100px 0px 100px 0px;
+    width: 400px;
+    background-position: center;
+  }
+  
+  .inner-slider-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 420px;
+    margin-top: 10px;
+    position: absolute;
+    top: 45%;
+  }
+  .inner-slider-controls button{
+    background-color: #fff;
+    border-radius: 100%;
+    border: none;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .inner-slider-controls svg{
+    fill: black;
+  }
+  .slideContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+
+  .slideContent .content{
+    width: 50%;
+    align-self: self-start;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    position: absolute;
+    top: 12%;
+  }
+  
+  .pagination-square {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    margin: 0% 10px;
+  }
+  
+  .pagination-square.active {
+    background-color: #333;
+    width: 60px;
+    height: 60px;
+  }
+  
+
+  .pagination-square0{
+    background: url(/src/assets/home_poster1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: center;
+  }
+  .pagination-square1{
+    background: url(/src/assets/home_poster1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: center;
+  }
+  .pagination-square2{
+    background: url(/src/assets/home_poster1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: center;
+  }
+  .pagination-square3{
+    background: url(/src/assets/doc.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: center;
+  }
+.line{
+    align-self: self-start;
+    background-color: #fff;
+    height: 48px;
+    width: 3px;
+}
+.slideindex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.docsDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    min-height: 300px;
+}
+.docs{
+    width: 22%;
+    margin: 11px 1%;
+    height: 100px;
+    border-radius: 25px 0px 25px 0px;
+    background-color: rgb(170, 165, 165);
+}
+.slideContent h3{
+  font-size: 30px;
+}
+.slideContent .content button{
+  color: #fff;
+  background-color: #0d0a3f00;
+  font-size: 20px;
+  padding: 1% 8%;
+  border: 2px solid #fff;
+  border-radius: 0px 50px 0px 50px;
+  margin-left: 1%;
+  margin-bottom: 4%;
+}
+.textLine{
+  display: flex;
+  height: 20px;
+  width: 2px;
+  background-color: #fff;
+  margin: 0% 4px;
+}
+.text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+  font-size: 20px;
+}
+.myrole{
+  font-size: 20px;
+}
+
+
+@media (max-width:1350px){
+.slideContent {
+  width: 100%;
+}
+
+}
+
+@media (max-width:960px){
+.slideContent{
+  flex-direction: column;
+}
+.slideContent .content {
+  width: 80%;
+  align-self: center;
+  text-align: center;
+}
+.text{
+  margin: auto;
+}
+.slide {
+  min-height: 952px;
+}
+.contactDiv{
+  flex-direction: column;
+}
+.contactDiv form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.contactInfo {
+  width: 100%;
+  align-self: center;
+  text-align: center;
+}
+.contactInfo p {
+  justify-content: center;
+}
+.social{
+  justify-content: center !important;
+}
+.inner-slider-content {
+  min-height: 245px;
+  width: 330px;
+}
+.inner-slider-controls {
+  width: 356px;
+}
+.docs {
+  width: 44%;
+}
+}
