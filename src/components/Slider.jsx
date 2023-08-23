@@ -45,39 +45,36 @@ const Slider = () => {
     const [activeSlideIndex, setActiveSlideIndex] = useState(0);
     const [activeInnerSlideIndex, setActiveInnerSlideIndex] = useState(0);
 
-    const handleOuterPrevSlide = () => {
-        setActiveSlideIndex(prevIndex => (prevIndex === 0 ? sliderContent.length - 1 : prevIndex - 1));
-        setActiveInnerSlideIndex(0);
-    };
-
-    const handleOuterNextSlide = () => {
-        setActiveSlideIndex(prevIndex => (prevIndex === sliderContent.length - 1 ? 0 : prevIndex + 1));
-        setActiveInnerSlideIndex(0);
-    };
-
     const handleInnerPrevSlide = () => {
         setActiveInnerSlideIndex(prevIndex =>
-            prevIndex === 0 ? sliderContent[activeSlideIndex].innerSlides.length - 1 : prevIndex - 1
+            prevIndex === 0 ? sliderContent[0].games[activeSlideIndex].images.length - 1 : prevIndex - 1
         );
     };
 
     const handleInnerNextSlide = () => {
         setActiveInnerSlideIndex(prevIndex =>
-            prevIndex === sliderContent[activeSlideIndex].innerSlides.length - 1 ? 0 : prevIndex + 1
+            prevIndex === sliderContent[0].games[activeSlideIndex].images.length - 1 ? 0 : prevIndex + 1
         );
     };
 
-    const outerSlide = sliderContent[activeSlideIndex];
-    const innerSlide = outerSlide.innerSlides[activeInnerSlideIndex];
+    const outerSlide = sliderContent[0].games[activeSlideIndex];
+    let innerSlideData = [];
+    if (activeSlideIndex === 3) {
+        innerSlideData = outerSlide.data;
+    } else {
+        innerSlideData = outerSlide.images[activeInnerSlideIndex];
+    }
 
     return (
-        <div className="slider" style={{
-            backgroundImage: `url(/assets/home_poster${activeSlideIndex}.png)`,
+        <div className="slider" id="slider" style={{
+            backgroundImage: `url(/assets/${outerSlide.bg})`,
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             backgroundOrigin: 'border-box',
             backgroundPosition: 'center',
+            position: 'relative',
         }}>
+            <div className="gradient-overlay"></div>
 
             <h2>Games and Documents</h2>
             <div className="slides-container">
@@ -86,58 +83,68 @@ const Slider = () => {
                     activeSlideIndex == 3
 
                         ? <div className="slide">
-                            <div className='docsDiv'>
-                                <div className="docs">
-
-                                </div>
-                                <div className="docs">
-
-                                </div>
-                                <div className="docs">
-
-                                </div>
-                                <div className="docs">
-
-                                </div>
-                                <div className="docs">
-
-                                </div>
-                                <div className="docs">
-
-                                </div>
-                                <div className="docs">
-
-                                </div>
-                                <div className="docs">
-
-                                </div>
+                            <div className="docsDiv">
+                                {innerSlideData.map((doc, index) => (
+                                    <div key={index} className="docs">
+                                        <a href={doc.link} target="_blank" rel="noopener noreferrer">
+                                            <img src={doc.img} alt={`Document ${index}`} />
+                                        </a>
+                                    </div>
+                                ))}
                             </div>
+
                         </div> :
                         <div className="slide">
                             <div className="slideContent">
                                 <div className="inner-slider swipe-fade-up">
-                                    <div className="inner-slider-content" style={{ backgroundImage: `url(${innerSlide.img})` }}></div>
+                                    <div className="inner-slider-content">
+
+                                        {
+                                            activeInnerSlideIndex === 0 ? (
+                                                <iframe
+                                                    width="560"
+                                                    height="315"
+                                                    src={innerSlideData}
+                                                    title="YouTube Video Player"
+                                                    frameBorder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowFullScreen
+                                                ></iframe>
+                                            ) : (
+                                                <div className="inner-slider-content" style={{ backgroundImage: `url(${innerSlideData})` }}></div>
+                                            )
+                                        }
+                                    </div>
 
                                     <div className="inner-slider-controls">
                                         <button onClick={handleInnerPrevSlide}><GrFormPrevious /></button>
                                         <button onClick={handleInnerNextSlide}>< MdNavigateNext /></button>
                                     </div>
+                                    <div className="inner-pagination">
+                                        {sliderContent[0].games[activeSlideIndex].images.map((_, index) => (
+                                            <div
+                                                key={index}
+                                                className={`inner-pagination-square ${index === activeInnerSlideIndex ? 'active' : ''}`}
+                                                onClick={() => setActiveInnerSlideIndex(index)}
+                                            ></div>
+                                        ))}
+                                    </div>
                                 </div>
                                 <div className="content swipe-fade-right">
-                                    <h3>{innerSlide.innerTitle}</h3>
+                                    <h3>{outerSlide.title}</h3>
                                     <p className='text'>
-                                        <span>{innerSlide.text1}</span>
+                                        <span>{outerSlide.text1}</span>
                                         <span className="textLine"></span>
-                                        <span>{innerSlide.text2}</span>
+                                        <span>{outerSlide.text2}</span>
                                     </p>
                                     <p className='myrole'>
                                         <strong>My Role:</strong>
-                                        <span>{innerSlide.role}</span>
+                                        <span>{outerSlide.role}</span>
                                     </p>
-                                    <p>{innerSlide.description}</p>
-                                    <button>GDD</button>
-                                    <button>Website</button>
-                                    <button>Download</button>
+                                    <p>{outerSlide.description}</p>
+                                    <a href={outerSlide.gddLink}><button>GDD</button></a>
+                                    <a href={outerSlide.websiteLink}> <button>Website</button></a>
+                                    <a href={outerSlide.downloadLink}> <button>Download</button></a>
                                 </div>
                             </div>
                         </div>
@@ -146,7 +153,7 @@ const Slider = () => {
 
             </div>
             <div className="pagination">
-                {sliderContent.map((_, index) => (
+                {sliderContent[0].games.map((_, index) => (
                     <div key={index}>
                         {index === 3 ? (
                             <div className='slideindex'>

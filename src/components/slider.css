@@ -16,12 +16,14 @@
     width: 100%;
     overflow: hidden;
   }
-  
+  .slider h2{
+    z-index: 1;
+  }
   .slide {
     flex: 0 0 100%;
     transition: transform 0.3s ease-in-out;
 
-    min-height: 600px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,26 +41,27 @@
     align-items: center;
   }
   
-  .inner-slider-content {
+  .inner-slider-content,iframe {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
     background-color: #000000;
-    min-height: 300px;
+    min-height: 370px;
     border-radius: 100px 0px 100px 0px;
-    width: 400px;
+    width: 500px;
     background-position: center;
+    z-index: 1;
   }
-  
   .inner-slider-controls {
     display: flex;
     justify-content: space-between;
-    width: 420px;
+    width: 520px;
     margin-top: 10px;
     position: absolute;
     top: 45%;
+    z-index: 2;
   }
   .inner-slider-controls button{
     background-color: #fff;
@@ -84,6 +87,7 @@
   .slideContent .content{
     width: 50%;
     align-self: self-start;
+    z-index: 1;
   }
   .pagination {
     display: flex;
@@ -101,15 +105,30 @@
     cursor: pointer;
     border: 2px solid #fff;
     margin: 0% 10px;
+    transition: all 0.5;
   }
   
   .pagination-square.active {
     background-color: #333;
     width: 60px;
     height: 60px;
+    transition: all 0.6s;
   }
-  
-
+  .inner-pagination{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100px;
+    position: absolute;
+    bottom: 4%;
+    z-index: 1;
+  }
+.inner-pagination-square{
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
   .pagination-square0{
     background: url(/src/assets/home_poster1.png);
     background-size: cover;
@@ -163,6 +182,12 @@
     height: 100px;
     border-radius: 25px 0px 25px 0px;
     background-color: rgb(170, 165, 165);
+    z-index: 1;
+}
+.docs img{
+  width: 100%;
+  height: 100%;
+  border-radius: 25px 0px 25px 0px;
 }
 .slideContent h3{
   font-size: 30px;
@@ -176,6 +201,7 @@
   border-radius: 0px 50px 0px 50px;
   margin-left: 1%;
   margin-bottom: 4%;
+  font-family: 'Lexend', sans-serif;
 }
 .textLine{
   display: flex;
@@ -239,7 +265,7 @@
 .social{
   justify-content: center !important;
 }
-.inner-slider-content {
+.inner-slider-content,iframe {
   min-height: 245px;
   width: 330px;
 }
@@ -249,4 +275,13 @@
 .docs {
   width: 44%;
 }
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(13, 10, 63, 0.9), rgba(255, 255, 255, 0.1));
 }

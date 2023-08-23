@@ -9,6 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 .contact p{
     text-align: center;
@@ -48,6 +49,7 @@ form input, form textarea{
     font-size: 20px;
     color: #fff;
     outline: none;
+    font-family: 'Lexend', sans-serif;
 }
 form input::placeholder, form textarea::placeholder{
     color: #fff;
@@ -59,6 +61,7 @@ form button{
     padding: 1% 10%;
     font-size: 20px;
     border: none;
+    font-family: 'Lexend', sans-serif;
 }
 .contact h2{
     font-size: 24px;

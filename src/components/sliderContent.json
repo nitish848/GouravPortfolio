@@ -1,149 +1,91 @@
 [
     {
-        "title": "Games and Games",
-        "innerSlides": [
+        "title": "Games and Documents",
+        "games": [
             {
-                "innerTitle": "Game: Space Adventures",
-                "text1": "Text",
-                "text2": "Text",
+                "title": "Space Adventures",
+                "text1": "Adventure",
+                "text2": "Space",
+                "description": "Crafting immersive space environments.",
                 "role": "Lead Developer",
-                "description": "Led a team of engineers in creating the gameplay mechanics and crafting the immersive space environments.",
-                "img": "https://img.freepik.com/free-vector/fantasy-game-background-with-fantastic-artifact_107791-12312.jpg?size=626&ext=jpg&ga=GA1.2.244873369.1691736701&semt=ais"
+                "bg": "home_poster0.png",
+                "gddLink": "https://example.com/gdd-space-adventures.pdf",
+                "websiteLink": "https://example.com/space-adventures",
+                "downloadLink": "https://example.com/space-adventures/download",
+                "images": [
+                    "https://www.youtube.com/embed/s3d-pdch9Fc",
+                    "https://cdn.pixabay.com/photo/2023/07/29/08/31/snow-felberich-8156446_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2023/08/18/11/35/frog-8198313_640.jpg"
+                ]
             },
             {
-                "innerTitle": "Game: Fantasy Realms",
-                "text1": "Text",
-                "text2": "Text",
+                "title": "Fantasy Realms",
+                "text1": "Fantasy",
+                "text2": "Quests",
+                "description": "Engage players in an epic fantasy narrative.",
                 "role": "Game Designer",
-                "description": "Designed intricate quest lines, character progression, and world-building elements to engage players in an epic fantasy narrative.",
-                "img": "https://img.freepik.com/free-photo/alien-forest-illustration_456031-20.jpg?size=626&ext=jpg&ga=GA1.2.244873369.1691736701&semt=ais"
+                "bg": "home_poster1.png",
+                "gddLink": "https://example.com/gdd-fantasy-realms.pdf",
+                "websiteLink": "https://example.com/fantasy-realms",
+                "downloadLink": "https://example.com/fantasy-realms/download",
+                "images": [
+                    "https://www.youtube.com/embed/VViPg6HwY4I",
+                    "https://cdn.pixabay.com/photo/2023/07/29/08/31/snow-felberich-8156446_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2023/08/18/11/35/frog-8198313_640.jpg"
+                ]
             },
             {
-                "innerTitle": "Game: Cybernetic Havoc",
-                "text1": "Text",
-                "text2": "Text",
-                "role": "Lead Gameplay Programmer",
-                "description": "Developed cutting-edge gameplay mechanics that seamlessly integrated cybernetic abilities and interactive storytelling.",
-                "img": "https://img.freepik.com/free-vector/fantasy-game-background-with-fantastic-artifact_107791-12312.jpg?size=626&ext=jpg&ga=GA1.2.244873369.1691736701&semt=ais"
-            },
-            {
-                "innerTitle": "Game: Game Development Guidelines",
-                "text1": "Text",
-                "text2": "Text",
-                "role": "Contributor",
-                "description": "Contributed expertise in software engineering best practices to ensure the guidelines aligned with industry standards.",
-                "img": "https://img.freepik.com/free-vector/fantasy-game-background-with-fantastic-artifact_107791-12312.jpg?size=626&ext=jpg&ga=GA1.2.244873369.1691736701&semt=ais"
-            }
-        ]
-    },
-    {
-        "title": "Games and Games",
-        "innerSlides": [
-            {
-                "innerTitle": "Game: Space Adventures",
-                "text1": "Text",
-                "text2": "Text",
-                "role": "Lead Developer",
-                "description": "Led a team of engineers in creating the gameplay mechanics and crafting the immersive space environments.",
-                "img": "https://img.freepik.com/free-photo/alien-forest-illustration_456031-20.jpg?size=626&ext=jpg&ga=GA1.2.244873369.1691736701&semt=ais"
-            },
-            {
-                "innerTitle": "Game: Fantasy Realms",
-                "text1": "Text",
-                "text2": "Text",
+                "title": "Fantasy Realms 2",
+                "text1": "Fantasy",
+                "text2": "Quests",
+                "description": "Engage players in an epic fantasy narrative.",
                 "role": "Game Designer",
-                "description": "Designed intricate quest lines, character progression, and world-building elements to engage players in an epic fantasy narrative.",
-                "img": "https://img.freepik.com/free-vector/fantasy-game-background-with-fantastic-artifact_107791-12312.jpg?size=626&ext=jpg&ga=GA1.2.244873369.1691736701&semt=ais"
+                "bg": "home_poster2.png",
+                "gddLink": "https://example.com/gdd-fantasy-realms.pdf",
+                "websiteLink": "https://example.com/fantasy-realms",
+                "downloadLink": "https://example.com/fantasy-realms/download",
+                "images": [
+                    "https://www.youtube.com/embed/s3d-pdch9Fc",
+                    "https://cdn.pixabay.com/photo/2023/07/29/08/31/snow-felberich-8156446_1280.jpg",
+                    "https://cdn.pixabay.com/photo/2023/08/18/11/35/frog-8198313_640.jpg"
+                ]
             },
             {
-                "innerTitle": "Game: Cybernetic Havoc",
-                "text1": "Text",
-                "text2": "Text",
-                "role": "Lead Gameplay Programmer",
-                "description": "Developed cutting-edge gameplay mechanics that seamlessly integrated cybernetic abilities and interactive storytelling.",
-                "img": "https://img.freepik.com/free-vector/fantasy-game-background-with-fantastic-artifact_107791-12312.jpg?size=626&ext=jpg&ga=GA1.2.244873369.1691736701&semt=ais"
-            },
-            {
-                "innerTitle": "Game: Game Development Guidelines",
-                "text1": "Text",
-                "text2": "Text",
-                "role": "Contributor",
-                "description": "Contributed expertise in software engineering best practices to ensure the guidelines aligned with industry standards.",
-                "img": "https://img.freepik.com/free-vector/fantasy-game-background-with-fantastic-artifact_107791-12312.jpg?size=626&ext=jpg&ga=GA1.2.244873369.1691736701&semt=ais"
-            }
-        ]
-    },
-    {
-        "title": "Games and Games",
-        "innerSlides": [
-            {
-                "innerTitle": "Game: Space Adventures",
-                "text1": "Text",
-                "text2": "Text",
-                "role": "Lead Developer",
-                "description": "Led a team of engineers in creating the gameplay mechanics and crafting the immersive space environments.",
-                "img": "https://img.freepik.com/free-vector/fantasy-game-background-with-fantastic-artifact_107791-12312.jpg?size=626&ext=jpg&ga=GA1.2.244873369.1691736701&semt=ais"
-            },
-            {
-                "innerTitle": "Game: Fantasy Realms",
-                "text1": "Text",
-                "text2": "Text",
-                "role": "Game Designer",
-                "description": "Designed intricate quest lines, character progression, and world-building elements to engage players in an epic fantasy narrative.",
-                "img": "https://img.freepik.com/free-vector/fantasy-game-background-with-fantastic-artifact_107791-12312.jpg?size=626&ext=jpg&ga=GA1.2.244873369.1691736701&semt=ais"
-            },
-            {
-                "innerTitle": "Game: Cybernetic Havoc",
-                "text1": "Text",
-                "text2": "Text",
-                "role": "Lead Gameplay Programmer",
-                "description": "Developed cutting-edge gameplay mechanics that seamlessly integrated cybernetic abilities and interactive storytelling.",
-                "img": "https://img.freepik.com/free-photo/alien-forest-illustration_456031-20.jpg?size=626&ext=jpg&ga=GA1.2.244873369.1691736701&semt=ais"
-            },
-            {
-                "innerTitle": "Game: Game Development Guidelines",
-                "text1": "Text",
-                "text2": "Text",
-                "role": "Contributor",
-                "description": "Contributed expertise in software engineering best practices to ensure the guidelines aligned with industry standards.",
-                "img": "https://img.freepik.com/free-vector/fantasy-game-background-with-fantastic-artifact_107791-12312.jpg?size=626&ext=jpg&ga=GA1.2.244873369.1691736701&semt=ais"
-            }
-        ]
-    },
-    {
-        "title": "Games and Games",
-        "innerSlides": [
-            {
-                "innerTitle": "Game: Space Adventures",
-                "text1": "Text",
-                "text2": "Text",
-                "role": "Lead Developer",
-                "description": "Led a team of engineers in creating the gameplay mechanics and crafting the immersive space environments.",
-                "img": "https://img.freepik.com/free-photo/alien-forest-illustration_456031-20.jpg?size=626&ext=jpg&ga=GA1.2.244873369.1691736701&semt=ais"
-            },
-            {
-                "innerTitle": "Game: Fantasy Realms",
-                "text1": "Text",
-                "text2": "Text",
-                "role": "Game Designer",
-                "description": "Designed intricate quest lines, character progression, and world-building elements to engage players in an epic fantasy narrative.",
-                "img": "https://img.freepik.com/free-vector/fantasy-game-background-with-fantastic-artifact_107791-12312.jpg?size=626&ext=jpg&ga=GA1.2.244873369.1691736701&semt=ais"
-            },
-            {
-                "innerTitle": "Game: Cybernetic Havoc",
-                "text1": "Text",
-                "text2": "Text",
-                "role": "Lead Gameplay Programmer",
-                "description": "Developed cutting-edge gameplay mechanics that seamlessly integrated cybernetic abilities and interactive storytelling.",
-                "img": "https://img.freepik.com/free-vector/fantasy-game-background-with-fantastic-artifact_107791-12312.jpg?size=626&ext=jpg&ga=GA1.2.244873369.1691736701&semt=ais"
-            },
-            {
-                "innerTitle": "Game: Game Development Guidelines",
-                "text1": "Text",
-                "text2": "Text",
-                "role": "Contributor",
-                "description": "Contributed expertise in software engineering best practices to ensure the guidelines aligned with industry standards.",
-                "img": "https://img.freepik.com/free-vector/fantasy-game-background-with-fantastic-artifact_107791-12312.jpg?size=626&ext=jpg&ga=GA1.2.244873369.1691736701&semt=ais"
+                "bg": "videobg.gif",
+                "data": [
+                    {
+                        "link": "https://www.pexels.com/photo/aerial-photography-of-people-on-concrete-dock-15114086/",
+                        "img": "https://images.pexels.com/photos/15114086/pexels-photo-15114086/free-photo-of-aerial-photography-of-people-on-concrete-dock.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    },
+                    {
+                        "link": "https://www.pexels.com/photo/aerial-photography-of-people-on-concrete-dock-15114086/",
+                        "img": "https://images.pexels.com/photos/15114086/pexels-photo-15114086/free-photo-of-aerial-photography-of-people-on-concrete-dock.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    },
+                    {
+                        "link": "https://www.pexels.com/photo/aerial-photography-of-people-on-concrete-dock-15114086/",
+                        "img": "https://images.pexels.com/photos/15114086/pexels-photo-15114086/free-photo-of-aerial-photography-of-people-on-concrete-dock.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    },
+                    {
+                        "link": "https://www.pexels.com/photo/aerial-photography-of-people-on-concrete-dock-15114086/",
+                        "img": "https://images.pexels.com/photos/15114086/pexels-photo-15114086/free-photo-of-aerial-photography-of-people-on-concrete-dock.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    },
+                    {
+                        "link": "https://www.pexels.com/photo/aerial-photography-of-people-on-concrete-dock-15114086/",
+                        "img": "https://images.pexels.com/photos/15114086/pexels-photo-15114086/free-photo-of-aerial-photography-of-people-on-concrete-dock.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    },
+                    {
+                        "link": "https://www.pexels.com/photo/aerial-photography-of-people-on-concrete-dock-15114086/",
+                        "img": "https://images.pexels.com/photos/15114086/pexels-photo-15114086/free-photo-of-aerial-photography-of-people-on-concrete-dock.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    },
+                    {
+                        "link": "https://www.pexels.com/photo/aerial-photography-of-people-on-concrete-dock-15114086/",
+                        "img": "https://images.pexels.com/photos/15114086/pexels-photo-15114086/free-photo-of-aerial-photography-of-people-on-concrete-dock.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    },
+                    {
+                        "link": "https://www.pexels.com/photo/aerial-photography-of-people-on-concrete-dock-15114086/",
+                        "img": "https://images.pexels.com/photos/15114086/pexels-photo-15114086/free-photo-of-aerial-photography-of-people-on-concrete-dock.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    }
+                ]
             }
         ]
     }

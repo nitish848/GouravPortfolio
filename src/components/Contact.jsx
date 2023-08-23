@@ -41,7 +41,7 @@ const Contact = () => {
         });
     }, []);
     return (
-        <div className='contact'>
+        <div className='contact' id='contact'>
             <h2>Contact</h2>
             <div className="contactDiv">
                 <form action="" className='swipe-fade-up1'>
@@ -53,11 +53,12 @@ const Contact = () => {
                 </form>
                 <div className="contactInfo swipe-fade-right1">
                     <h2>Via</h2>
-                    <p>+91 63598 51545</p>
-                    <p className='email'>gauravbarai9@gmail.com</p>
-                    <p className='social'><BsLinkedin />\in\gauravbarai</p>
-                    <p className='social'><AiOutlineInstagram />gdesigns_official</p>
-                    <p className='social'><LuWebhook />\in\gauravbarai</p>
+                    <a href="tel:+91 63598 51545"><p>+91 63598 51545</p></a>
+                    <a href="mailto:gauravbarai9@gmail.com"><p className='email'>gauravbarai9@gmail.com</p></a>
+                    <a href="https://www.linkedin.com/in/gauravbarai/"><p className='social'><BsLinkedin />\in\gauravbarai</p></a>
+                    <a href="https://www.instagram.com/g.designsofficial/"><p className='social'><AiOutlineInstagram />gdesigns_official</p></a>
+                    <a href=""> <p className='social'><LuWebhook />\in\gauravbarai</p></a>
+
                 </div>
             </div>
             <p>©2023 Designed by Gaurav Barai | Developed by <a href="https://www.fiverr.com/nitishrana852">Nitish Rana</a></p>
