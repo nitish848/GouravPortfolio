@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import "./contact.css"
 import { BsLinkedin } from 'react-icons/bs';
 import { AiOutlineInstagram } from 'react-icons/ai';
-import { LuWebhook } from 'react-icons/lu';
+import { SiLinktree } from 'react-icons/si';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
@@ -56,8 +56,8 @@ const Contact = () => {
                     <a href="tel:+91 63598 51545"><p>+91 63598 51545</p></a>
                     <a href="mailto:gauravbarai9@gmail.com"><p className='email'>gauravbarai9@gmail.com</p></a>
                     <a href="https://www.linkedin.com/in/gauravbarai/"><p className='social'><BsLinkedin />\in\gauravbarai</p></a>
-                    <a href="https://www.instagram.com/g.designsofficial/"><p className='social'><AiOutlineInstagram />gdesigns_official</p></a>
-                    <a href=""> <p className='social'><LuWebhook />\in\gauravbarai</p></a>
+                    <a href="https://www.instagram.com/_gauravbarai/"><p className='social'><AiOutlineInstagram />gdesigns_official</p></a>
+                    <a href="https://linktr.ee/gauravbarai"> <p className='social'><SiLinktree />\in\gauravbarai</p></a>
 
                 </div>
             </div>
