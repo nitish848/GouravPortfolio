@@ -1,12 +1,14 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import "./contact.css"
 import { BsLinkedin } from 'react-icons/bs';
 import { AiOutlineInstagram } from 'react-icons/ai';
 import { SiLinktree } from 'react-icons/si';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import emailjs from 'emailjs-com';
 gsap.registerPlugin(ScrollTrigger);
 const Contact = () => {
+    const form = useRef();
     useEffect(() => {
         // Animation for elements with the class 'swipe-fade-up'
         gsap.fromTo('.swipe-fade-up1', {
@@ -40,16 +42,28 @@ const Contact = () => {
             },
         });
     }, []);
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_awr7grp', 'template_rdvaz0q', form.current, 'NMgrrT0ai1b98ar3R')
+            .then((result) => {
+                console.log(form.current)
+                console.log(result.text);
+            }, (error) => {
+                console.log(form.current)
+                console.log(error.text);
+            });
+    };
     return (
         <div className='contact' id='contact'>
             <h2>Contact</h2>
             <div className="contactDiv">
-                <form action="" className='swipe-fade-up1'>
+                <form action="" className='swipe-fade-up1' ref={form} onSubmit={sendEmail}>
                     <h2>Get in Touch</h2>
-                    <input type="text" placeholder='*Name' />
-                    <input type="email" placeholder='*Email' />
-                    <textarea cols="30" rows="10" placeholder='*Message'></textarea>
-                    <button>Send</button>
+                    <input type="text" name='name' placeholder='*Name' />
+                    <input type="email" name='email' placeholder='*Email' />
+                    <textarea cols="30" rows="10" name='message' placeholder='*Message'></textarea>
+                    <button type='submit' >Send</button>
                 </form>
                 <div className="contactInfo swipe-fade-right1">
                     <h2>Via</h2>
