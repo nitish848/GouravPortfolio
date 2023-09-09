@@ -4,3 +4,6 @@ body{
   color: #fff;
   font-family: 'Lexend', sans-serif;
 }
+button{
+  cursor: pointer;
+}
