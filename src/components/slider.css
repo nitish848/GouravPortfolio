@@ -203,6 +203,11 @@
   margin-bottom: 4%;
   font-family: 'Lexend', sans-serif;
 }
+.slideContent .content button:hover{
+  color: #0d0a3f;
+  background-color: #fff;
+
+}
 .textLine{
   display: flex;
   height: 20px;
